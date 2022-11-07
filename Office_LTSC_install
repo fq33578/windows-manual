@@ -8,13 +8,11 @@ https://config.office.com/deploymentsettings
 ///3.import config.xml & CMD input///
 cd C:\Program Files\Microsoft Office\Office16
 setup /download config.xml
-
-///4.CMD input///
 setup /configure config.xml
 
-///5.open with admin CMD input///
+///4.CMD open with admin input(AutoKMS)///
 slmgr /skms kms.03k.org
 slmgr /ato
 
-///6.start kms server////
+///5.start KMS server////
 net start sppsvc
