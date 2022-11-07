@@ -1,8 +1,8 @@
 ###install Office Manual###
-////1.download tools (can skip)///
+////1.download tools ///
 https://www.microsoft.com/en-us/download/details.aspx?id=49117
 
-///2.output&rename "config" (can skip)///
+///2.output&rename "config"///
 https://config.office.com/deploymentsettings
 
 ///3.import config.xml & CMD input///
