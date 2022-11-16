@@ -8,7 +8,7 @@
 ::3.create folder & CMD cd to floder
 cd C:\Program Files\Microsoft Office\Office16
 
-::4.import config.xml to floder
+::4.Move config.xml to floder
 
 ::5.Download Office
 setup /download config.xml
