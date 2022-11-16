@@ -1,18 +1,25 @@
-::install Office Manual
+:://install Office Manual//
 ::1.download tools 
 ::https://www.microsoft.com/en-us/download/details.aspx?id=49117
 
-::2.output&rename "config"
+::2.setting&output&rename "config"
 ::https://config.office.com/deploymentsettings
 
-::3.import config.xml & CMD input
+::3.create folder & CMD cd to floder
 cd C:\Program Files\Microsoft Office\Office16
+
+::4.import config.xml to floder
+
+::5.Download Office
 setup /download config.xml
+
+::6.Install Office
 setup /configure config.xml
 
-::4.CMD open with admin input(AutoKMS)
+::7.CMD open with admin input(AutoKMS)
 slmgr /skms kms.03k.org
 slmgr /ato
 
-::5.start KMS server
+::8.restart KMS server
 net start sppsvc
+net stop sppsvc&net start sppsvc
