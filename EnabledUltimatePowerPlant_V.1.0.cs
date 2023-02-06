@@ -10,8 +10,9 @@ namespace EnabledUltimatePowerPlant
     internal class Program
     {
 
-        static Process cmd = new Process();
+        
         #region 初始化CMD
+        static Process cmd = new Process();
         static void SetCMD()
         {
             cmd.StartInfo.FileName = "cmd.exe";
