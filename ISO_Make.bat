@@ -6,8 +6,8 @@ dism /online /export-driver /destination:D:/MyDrivers
 ::2
 Dism /Get-WimInfo /WimFile:D:\Sources\install.wim 
 ::3
-Dism /Mount-Image /ImageFile:D:\Sources\install.wim /Index:1 /MountDir:C:\Mount 
+Dism /Mount-Image /ImageFile:D:\Sources\install.wim /Index:3 /MountDir:C:\Mount 
 ::4
-Dism /Image:C:\Mount /Add-Driver /Driver:C:\Drivers /Recurse 
+Dism /Image:C:\Mount /Add-Driver /Driver:C:\Drivers /Recurse /ForceUnsigned
 ::5
 Dism /Unmount-Image /MountDir:C:\Mount /Commit 
