@@ -23,3 +23,7 @@ slmgr /ato
 ::8.restart KMS server
 net start sppsvc
 net stop sppsvc&net start sppsvc
+
+::if not Enable try it
+cscript ospp.vbs /sethst:kms.03k.org
+cscript ospp.vbs /act
