@@ -8,7 +8,7 @@ Dism /Get-WimInfo /WimFile:D:\Sources\install.wim
 ::3 Mount USB ISO
 Dism /Mount-Image /ImageFile:D:\Sources\install.wim /Index:3 /MountDir:C:\Mount 
 ::4 ADD Drivers TO USB ISO
-Dism /Image:C:\Mount /Add-Driver /Driver:C:\Drivers /Recurse /ForceUnsigned
+Dism /Image:C:\Mount /Add-Driver /Driver:C:\Drivers /Recurse
 ::5 SAVE And Unmount USB ISO
 Dism /Unmount-Image /MountDir:C:\Mount /Commit 
 ::6 Clean Trash Files
