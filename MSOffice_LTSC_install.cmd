@@ -24,6 +24,7 @@ slmgr /ato
 net start sppsvc
 net stop sppsvc&net start sppsvc
 
-::if not Enable try it
+::If Can't Enable Please Change Other KMS Server Link
+::KMS Server List :https://www.coolhub.top/tech-articles/kms_list.html
 cscript ospp.vbs /sethst:kms.03k.org
 cscript ospp.vbs /act
