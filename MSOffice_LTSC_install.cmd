@@ -26,5 +26,6 @@ net stop sppsvc&net start sppsvc
 
 ::If Can't Enable Please Change Other KMS Server Link
 ::KMS Server List :https://www.coolhub.top/tech-articles/kms_list.html
+cd C:\Program Files\Microsoft Office\Office16
 cscript ospp.vbs /sethst:kms.03k.org
 cscript ospp.vbs /act
