@@ -3,7 +3,7 @@
 ::2. Boot  WinPE Open Diskgenius To Move System
 ::https://www.diskgenius.cn/download.php
 
-:::If Black Screen Only Mouse Cursor Please Try:::
+:::If Black Screen Only Mouse Cursor Please Try Remove Old Disk Mount:::
 ::3. Press Win+R Input "regedit"
 ::4. Press "HKEY_LOCAL_MOCHINE" 
 ::5. Press "File->LOAD LOAD Register Zone"
@@ -11,7 +11,7 @@
 ::7. Find "MountedDevices"
 ::8. Remove All Mount Disk
 
-:::If Blue Screen Code 0x000000e Please Try:::
+:::If Blue Screen Error Code 0xc00000e Please Try Fix EFI Boot:::
 ::9. Copy Target Disk GUID From Disk Genius
 ::10. Open CMD From Admin
 ::11. If Target Disk is F, Input "bcdboot F:\windows /l zh-tw"
