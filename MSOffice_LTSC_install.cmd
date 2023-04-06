@@ -13,19 +13,26 @@ cd C:\Program Files\Microsoft Office\Office16
 ::5.Download Office
 setup /download config.xml
 
+---------------------------------------
+
 ::6.Install Office
 setup /configure config.xml
 
-::7.CMD open with admin input(AutoKMS)
-slmgr /skms kms.loli.beer
-slmgr /ato
-
-::8.restart KMS server
-net start sppsvc
-net stop sppsvc&net start sppsvc
-
+::7.Lisence Enabled
 ::If Can't Enable Please Change Other KMS Server Link
 ::KMS Server List :https://www.coolhub.top/tech-articles/kms_list.html
 cd C:\Program Files\Microsoft Office\Office16
 cscript ospp.vbs /sethst:kms.loli.beer
 cscript ospp.vbs /act
+
+----------------------------------------
+::If Can't Enable Please Try These
+::CMD open with admin input(AutoKMS)
+slmgr /skms kms.loli.beer
+slmgr /ato
+
+::restart KMS server
+net start sppsvc
+net stop sppsvc&net start sppsvc
+
+
